@@ -1,7 +1,7 @@
 # Algoteque Topic App
 Coding Assessment for KK Course Bundle System.
 
-## Instalation
+## Installation
 
 Python version used: 3.10.11
 To install required packages: `pip install -r requirements.txt`
