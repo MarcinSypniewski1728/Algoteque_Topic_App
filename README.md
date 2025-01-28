@@ -8,6 +8,6 @@ To install required packages: `pip install -r requirements.txt`
 
 ## Code Structure
 The app is run from the *app.py* file and it can be run using this command:   
-`python app.py`
+`python app.py`   
 Unit tests are in *unit_tests.py* and can be run using:   
 `pytest unit_tests.py`   
