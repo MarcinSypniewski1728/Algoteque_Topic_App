@@ -85,3 +85,22 @@ def test_invalid_request_data(client):
 
     # Assert the response status code for an error
     assert response.status_code == 400
+
+def test_invalid_request_path(client):
+    '''
+    Test to check if app can handle wrong request path
+    '''
+    # Define the request data
+    request_data = {
+        "topics": {
+            "reading": 20,
+            "history": 15,
+            "art": 10
+        }
+    }
+
+    # Send a POST request
+    response = client.post('/not_a_page', json=request_data)
+
+    # Assert the response status code for an error
+    assert response.status_code == 404
